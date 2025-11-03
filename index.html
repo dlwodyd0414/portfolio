@@ -1,104 +1,197 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이재용 포트폴리오: 데이터 기반 물류·품질 산업공학도</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
 <body>
-  <!-- ===== Header / Nav ===== -->
-  <header class="site-header">
-    <nav class="nav">
-      <a class="logo" href="#hero">MyPortfolio</a>
-      <button class="nav-toggle" id="navToggle" aria-label="메뉴 열기">☰</button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
-  <!-- ===== Hero ===== -->
-  <section id="hero" class="hero">
-    <h1>안녕하세요, 저는 <span class="accent">[JAEYONH LEE]</span> 입니다.</h1>
-    <p>웹 개발자 지망생 • HTML · CSS · JavaScript</p>
-    <a href="#projects" class="btn">프로젝트 보러가기</a>
-  </section>
+    <header class="site-header">
+        <nav class="nav">
+            <div class="logo">J.Y.LEE</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Core Vision</a></li>
+                <li><a href="#projects">P-A-R Projects</a></li>
+                <li><a href="#competencies">Competencies</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="navToggle">☰</button>
+        </nav>
+    </header>
 
-  <!-- ===== About ===== -->
-  <section id="about" class="section">
-    <h2>About Me</h2>
-    <div class="about-grid">
-      <img src="images/profile.jpg" alt="프로필 사진" class="avatar" />
-      <div>
-        <p>코딩을 배우며 작은 것부터 꾸준히 만들어가는 개발자입니다. 문제를 단순하게 정의하고, 사용자에게 가치를 주는 것을 즐깁니다.</p>
-        <ul class="tags">
-          <li>#HTML</li>
-          <li>#CSS</li>
-          <li>#JavaScript</li>
-          <li>#Responsive</li>
-        </ul>
-      </div>
-    </div>
-  </section>
+    <section class="hero" id="home">
+        <h1>
+            물류 현장의 비효율을 
+            <br><span class="accent">데이터와 시뮬레이션으로 해결하는</span>
+            <br>체계적 산업공학도
+        </h1>
+        <p>
+            공주대학교 산업공학과 이재용입니다. 데이터 기반의 분석적 사고로 공급망 효율과 품질 신뢰도를 높이는 전문가를 목표합니다.
+        </p>
+        <a href="#projects" class="btn">분석적 사고 과정 증명 →</a>
+    </section>
 
-  <!-- ===== Projects ===== -->
-  <section id="projects" class="section">
-    <h2>Projects</h2>
-    <div class="grid">
-      <article class="card">
-        <h3>To‑Do List</h3>
-        <p>LocalStorage를 활용한 간단한 할일 관리 앱.</p>
-        <a href="#" class="link">Live</a>
-        <a href="#" class="link">Code</a>
-      </article>
-      <article class="card">
-        <h3>Random Quote</h3>
-        <p>버튼 클릭 시 랜덤 명언을 보여주는 위젯.</p>
-        <a href="#" class="link">Live</a>
-        <a href="#" class="link">Code</a>
-      </article>
-      <article class="card">
-        <h3>Weather App</h3>
-        <p>오픈 API로 가져오는 도시별 실시간 날씨.</p>
-        <a href="#" class="link">Live</a>
-        <a href="#" class="link">Code</a>
-      </article>
-    </div>
-  </section>
+    <section class="section" id="about">
+        <h2>💡 Core Vision: 두 가지 전문성</h2>
+        <div class="about-grid">
+            <div>
+                <p>
+                    대학 생활 동안 생산관리, 물류관리, 품질경영 등 산업 현장 전반의 지식을 습득했습니다. 특히 산업의 효율성과 신뢰도를 좌우하는 물류·품질 프로세스 개선에 큰 흥미를 가지고 있습니다.
+                </p>
+                <p>
+                    맡은 일에는 책임감을 가지고 성실하게 임하며, 매사에 꼼꼼하고 체계적으로 일처리합니다. 현재는 데이터 분석(Python, SQL)과 프로세스 개선 방법론(Six Sigma)을 융합하여 실무 역량을 키우고 있습니다.
+                </p>
+                <ul class="tags">
+                    <li>데이터 기반 의사결정</li>
+                    <li>물류 프로세스 최적화</li>
+                    <li>품질 관리 시스템</li>
+                    <li>체계적 문제 해결</li>
+                </ul>
+            </div>
+            
+            <div class="image-gallery">
+                <img src="images/profile_01.jpg" alt="데이터 분석 이미지">
+                <img src="images/profile_02.jpg" alt="물류 현장 이미지">
+                <img src="images/profile_03.jpeg" alt="품질 관리 이미지">
+                <img src="images/profile_04.jpg" alt="스터디 활동 이미지">
+            </div>
+        </div>
+    </section>
 
-  <!-- ===== Contact ===== -->
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <form id="contactForm" class="contact-form" novalidate>
-      <div class="row">
-        <label>
-          이름
-          <input type="text" id="name" name="name" required placeholder="홍길동" />
-        </label>
-        <label>
-          이메일
-          <input type="email" id="email" name="email" required placeholder="me@example.com" />
-        </label>
-      </div>
-      <label>
-        메시지
-        <textarea id="message" name="message" required placeholder="안녕하세요! 협업 문의드립니다."></textarea>
-      </label>
-      <div class="actions">
-        <button type="submit" class="btn">보내기</button>
-        <span class="hint">* 제출 시 “감사합니다” 메시지와 함께 입력란이 초기화됩니다.</span>
-      </div>
-      <p id="formStatus" class="status" role="status" aria-live="polite"></p>
-    </form>
-  </section>
+    <section class="section" id="projects">
+        <h2>📈 Projects: 문제 해결 과정 증명</h2>
 
-  <footer class="site-footer">
-    <p>© 2025 My Portfolio • <a href="https://github.com/yourusername" target="_blank" rel="noopener">GitHub</a></p>
-  </footer>
+        <div class="grid">
+            <div class="card">
+                <h3>📌 편의점 DB 구축 프로젝트</h3>
+                
+                <h4 class="problem-action-result">Problem (비효율 정의)</h4>
+                <p>전국 편의점의 파편화된 상품/판매 데이터를 체계적으로 통합할 DB 구조 부재.</p>
 
-  <script src="app.js"></script>
+                <h4 class="problem-action-result">Action (데이터 모델링)</h4>
+                <p>SQL 기반의 관계형 데이터베이스를 설계하고, 실제 판매 데이터를 수집·정제하여 모델에 적용.</p>
+
+                <h4 class="problem-action-result">Result (실무 활용성)</h4>
+                <p>실제 판매 트렌드 분석 및 상품 재고 예측을 위한 데이터 구조 기반 마련.</p>
+                
+                <div class="actions">
+                    <a href="#" class="link" target="_blank">View Live</a> 
+                    <a href="#" class="link" target="_blank">GitHub Code</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>📊 제조기업 데이터 분석</h3>
+                
+                <h4 class="problem-action-result">Problem (지표 분석)</h4>
+                <p>제조기업 가상 데이터를 활용하여 잠재적 불량률 및 생산 효율 저하 요인 탐색.</p>
+
+                <h4 class="problem-action-result">Action (분석 및 기술 적용)</h4>
+                <p>Python(pandas) 및 R을 활용, 재고 회전율 및 불량 지표를 분석하고 데이터 시각화.</p>
+
+                <h4 class="problem-action-result">Result (개선 아이디어)</h4>
+                <p>데이터 기반의 구체적 개선안을 도출하여 학내 과제 우수 평가 획득.</p>
+                
+                <div class="actions">
+                    <a href="#" class="link" target="_blank">View Report</a> 
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>⚙️ 졸업작품: 물류 흐름 최적화</h3>
+                
+                <h4 class="problem-action-result">Goal (최적화 목표)</h4>
+                <p>창고 내 입출고 병목 현상을 해결하고, 실시간 재고 현황 모니터링 시스템 구현.</p>
+
+                <h4 class="problem-action-result">Method (시뮬레이션 및 기술)</h4>
+                <p>Python, Java를 이용한 입출고 시뮬레이션 모델 개발 및 Tableau를 활용한 시각화 계획.</p>
+
+                <h4 class="problem-action-result">Expected Impact (예상 영향)</h4>
+                <p>물류 시스템의 운영 비용 절감 및 효율성 수치적 증명.</p>
+                
+                <div class="actions">
+                    <span class="hint">202X년 완료 예정 (계획서 참조)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section" id="competencies">
+        <h2>🎓 Core Competencies & Roadmap</h2>
+        <p>물류·품질 전문가 성장을 위한 하드 스킬과 전문 인증을 체계적으로 확보하고 있습니다.</p>
+
+        <div class="grid">
+            <div class="card">
+                <h3>① Professional Certifications</h3>
+                <ul>
+                    <li>보유: ADsP, 식스시그마 GB, ISO 9001 수료, 소방안전관리자 1급</li>
+                    <li>취득 예정: 물류관리사, 품질경영기사, 유통관리사 2급</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>② Technical Hard Skills</h3>
+                <ul>
+                    <li>데이터 분석: Python(Pandas), R 프로그래밍 (학습 중)</li>
+                    <li>데이터베이스: SQL, Firebase</li>
+                    <li>시각화/분석 도구: Excel, Tableau (실습 중)</li>
+                    <li>프로세스: Java, 시뮬레이션 모델링</li>
+                </ul>
+            </div>
+            
+            <div class="card" id="roadmap">
+                <h3>③ Growth Roadmap (타임라인)</h3>
+                <h4 class="problem-action-result">단기 목표 (1~2년)</h4>
+                <p>필수 자격증 및 TOEIC 850점 달성, 데이터 분석 실습 프로젝트 3개 이상 완료.</p>
+                
+                <h4 class="problem-action-result">중기 목표 (3~5년)</h4>
+                <p>제조·유통 기업 입사 후, 데이터 기반 물류 운영/생산성 향상 프로젝트 주도 참여.</p>
+                
+                <h4 class="problem-action-result">장기 목표 (5년 이후)</h4>
+                <p>기업 공급망(SCM) 효율화를 총괄하는 현장 중심 관리자 포지션.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>💬 Contact & Interests</h2>
+        <div class="contact-form">
+            
+            <form id="contactForm">
+                <p>연구 관련 문의나 협업 제안은 언제든 환영합니다.</p>
+                <div class="row">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <div class="actions">
+                    <button type="submit" class="btn">Send Message</button>
+                    <span class="hint">현재는 클라이언트 측 검증만 동작합니다. (Formspree 권장)</span>
+                </div>
+                <div id="formStatus" class="status"></div>
+            </form>
+            
+            <hr style="margin: 40px auto; width: 60%; border-color: rgba(255,255,255,0.08);">
+
+            <h3>Academic Interests</h3>
+            <p>
+                최근에는 물류 자동화(AGV, AMR) 및 공급망(SCM) 기술 뉴스를 즐겨 탐독하며 산업의 최신 트렌드를 파악하고, 개인적인 성장을 위해 영어 및 일본어 기초 회화를 학습 중입니다.
+            </p>
+            
+            <h3>Hobby & Stress Management</h3>
+            <p>
+                해외축구 시청 및 직접 풋살 경기에 참여하며 팀워크를 익힙니다. 음악 감상과 산책을 통해 스트레스를 해소하고 학업 및 실습에 대한 집중력을 유지합니다.
+            </p>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <p>© 2025 Jaeyong Lee's Portfolio. Built for Industrial Engineering.</p>
+    </footer>
+
+    <script src="app.js"></script>
 </body>
-</html>
+</html
